@@ -43,16 +43,6 @@
         android:gravity="center"
         />
 
-    <!--<TextView-->
-        <!--android:id="@+id/province"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="23dp"-->
-        <!--android:layout_marginStart="50dp"-->
-        <!--android:layout_marginTop="20dp"-->
-        <!--app:layout_constraintTop_toBottomOf="@+id/phoneNum"-->
-        <!--app:layout_constraintStart_toStartOf="parent"-->
-        <!--android:text="省份"-->
-        <!--/>-->
 
     <TextView
         android:id="@+id/email"
@@ -105,15 +95,6 @@
         android:background="#00000000"
         />
 
-    <!--<TextView-->
-        <!--android:id="@+id/provinceInfo"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="23dp"-->
-        <!--android:layout_marginStart="50dp"-->
-        <!--android:layout_marginTop="20dp"-->
-        <!--app:layout_constraintTop_toBottomOf="@+id/phoneNumBtn"-->
-        <!--app:layout_constraintStart_toStartOf="@id/province"-->
-        <!--/>-->
 
     <Button
         android:id="@+id/emailBtn"
