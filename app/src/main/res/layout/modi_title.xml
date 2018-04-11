@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/title_bg">
+    android:background="#ed4255">
 
     <Button
         android:id="@+id/title_cancel"
@@ -10,9 +10,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="5dp"
-        android:background="@drawable/cancel_bg"
         android:text="Cancel"
-        android:textColor="#fff"/>
+        android:textColor="#fff"
+
+        android:background="#ed4255"/>
 
     <TextView
         android:id="@+id/title_text"
@@ -23,7 +24,8 @@
         android:gravity="center"
         android:text="Title"
         android:textColor="#fff"
-        android:textSize="24sp"/>
+        android:textSize="24sp" />
+        <!--android:ellipsize="marquee"/>-->
 
     <Button
         android:id="@+id/title_save"
@@ -31,8 +33,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="5dp"
-        android:background="@drawable/save_bg"
         android:text="Save"
-        android:textColor="#fff"/>
+        android:textColor="#fff"
+
+        android:background="#ed4255"/>
 
 </LinearLayout>

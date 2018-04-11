@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".specInfoActivity" />
-        <activity android:name=".ModiInfoActivity"></activity>
+        <activity android:name=".ModiInfoActivity" />
+        <activity android:name=".AddContActivity"></activity>
     </application>
 
 </manifest>

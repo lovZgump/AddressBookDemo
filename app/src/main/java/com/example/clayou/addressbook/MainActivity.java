@@ -35,13 +35,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, specInfoActivity.class);
                 String name = contacts.getName();
                 String phoneNum = contacts.getPhoneNum();
-                //String province = contacts.getProvince();
                 String email = contacts.getEmail();
                 String address = contacts.getAddress();
                 int avatarId = contacts.getAvatarId();
                 intent.putExtra("name", name);
                 intent.putExtra("phoneNum", phoneNum);
-                //intent.putExtra("province", province);
                 intent.putExtra("email", email);
                 intent.putExtra("address", address);
                 intent.putExtra("avatar", avatarId);
@@ -53,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ModiInfoActivity.class);
+                Intent intent = new Intent(MainActivity.this, AddContActivity.class);
                 startActivity(intent);
             }
         });

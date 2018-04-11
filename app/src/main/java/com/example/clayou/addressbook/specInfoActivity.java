@@ -1,8 +1,10 @@
 package com.example.clayou.addressbook;
 
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -11,7 +13,6 @@ public class specInfoActivity extends AppCompatActivity {
 
     private String name;
     private String phoneNum;
-   // private String province;
     private String email;
     private String address;
     private int avatarId;
@@ -44,6 +45,20 @@ public class specInfoActivity extends AppCompatActivity {
         phoneNumBtn.setText(phoneNum);
         emailBtn.setText(email);
         addressBtn.setText(address);
+
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(specInfoActivity.this, ModiInfoActivity.class);
+                intent.putExtra("name", name);
+                intent.putExtra("phoneNum", phoneNum);
+                intent.putExtra("email", email);
+                intent.putExtra("address", address);
+                intent.putExtra("avatar", avatarId);
+                startActivity(intent);
+            }
+        });
 
     }
 }
