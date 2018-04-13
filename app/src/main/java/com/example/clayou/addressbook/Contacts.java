@@ -10,7 +10,6 @@ public class Contacts {
     private String name;
     private int avatarId;
     private String phoneNum;
-    //private String province;
     private String email;
     private String address;
 
