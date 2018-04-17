@@ -6,129 +6,45 @@
     android:layout_height="match_parent"
     tools:context="com.example.clayou.addressbook.specInfoActivity">
 
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/avatar"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="60dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay" >
 
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
 
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
-        app:layout_constraintTop_toBottomOf="@+id/avatar"
-        app:layout_constraintStart_toStartOf="parent"
-        android:text="姓名"
-        android:textSize="16dp"
-        android:gravity="center"
-         />
+            </android.support.v7.widget.Toolbar>
 
-    <TextView
-        android:id="@+id/phoneNum"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/name"
-        app:layout_constraintStart_toStartOf="parent"
-        android:text="号码"
-        android:textSize="16dp"
-        android:gravity="center"
-        />
+        </android.support.design.widget.AppBarLayout>
+
+        <include layout="@layout/spec_contact_content" />
 
 
-    <TextView
-        android:id="@+id/email"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/phoneNum"
-        app:layout_constraintStart_toStartOf="parent"
-        android:text="邮箱"
-        android:textSize="16dp"
-        android:gravity="center"
-        />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_edit" />
 
-    <TextView
-        android:id="@+id/address"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/email"
-        app:layout_constraintStart_toStartOf="parent"
-        android:text="地址"
-        android:textSize="16dp"
-        android:gravity="center"
-        />
-
-    <TextView
-        android:id="@+id/nameInfo"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
-        app:layout_constraintTop_toBottomOf="@+id/avatar"
-        app:layout_constraintStart_toStartOf="@id/name"
-        android:gravity="center"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        />
-
-    <Button
-        android:id="@+id/phoneNumBtn"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        android:textSize="18dp"
-        app:layout_constraintTop_toBottomOf="@+id/nameInfo"
-        app:layout_constraintStart_toStartOf="@id/phoneNum"
-        android:background="#00000000"
-        />
+    </android.support.design.widget.CoordinatorLayout>
 
 
-    <Button
-        android:id="@+id/emailBtn"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        android:textSize="18dp"
-        app:layout_constraintTop_toBottomOf="@+id/phoneNumBtn"
-        app:layout_constraintStart_toStartOf="@id/email"
-        android:background="#00000000"
-        />
 
-    <Button
-        android:id="@+id/addressBtn"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        android:textSize="18dp"
-        app:layout_constraintTop_toBottomOf="@+id/emailBtn"
-        app:layout_constraintStart_toStartOf="@id/address"
-        android:background="#00000000"
-        />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_edit" />
+
 
 </android.support.constraint.ConstraintLayout>

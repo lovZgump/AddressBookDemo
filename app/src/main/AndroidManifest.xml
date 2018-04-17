@@ -16,9 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".specInfoActivity" />
-        <activity android:name=".ModiInfoActivity" />
-        <activity android:name=".AddContActivity"></activity>
+        <activity
+            android:name=".specInfoActivity"
+            android:label="联系人"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ModiInfoActivity"
+            android:label="编辑联系人"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".AddContActivity"
+            android:label="新建联系人"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
