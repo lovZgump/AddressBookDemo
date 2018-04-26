@@ -37,7 +37,7 @@ public class ContactsAdapter extends ArrayAdapter {
             view = convertView;
         }
 
-        ImageView contactsAvatar = view.findViewById(R.id.imageView);
+        ImageView contactsAvatar = view.findViewById(R.id.img);
         TextView contactsName = view.findViewById(R.id.textView);
 
         contactsAvatar.setImageResource(contacts.getAvatarId());
